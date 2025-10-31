@@ -25,7 +25,7 @@ const WPSTesterApp = ({ goHome, deviceState, updateState }: WPSTesterAppProps) =
 
   const puzzleQuestions = [
     { q: "Device manufacturer hint: 5 letters", a: "suraj" },
-    { q: "Network type (uppercase): 2 letters + 1 number", a: "WPA2" },
+    { q: "Network security type (check Settings Wi-Fi):", a: "WPA2" },
     { q: "Common router default user:", a: "admin" },
     { q: "Device Android version: X.X format", a: "5.1" },
   ];
