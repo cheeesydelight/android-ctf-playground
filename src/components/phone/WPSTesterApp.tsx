@@ -41,9 +41,18 @@ const WPSTesterApp = ({ goHome, deviceState, updateState }: WPSTesterAppProps) =
   };
 
   const handleSubmitPuzzle = () => {
-    const allCorrect = puzzleQuestions.every(
-      (q, i) => answers[i].toLowerCase().trim() === q.a.toLowerCase()
-    );
+    console.log("Submitted answers:", answers);
+    console.log("Expected answers:", puzzleQuestions.map(q => q.a));
+    
+    const results = puzzleQuestions.map((q, i) => {
+      const userAnswer = answers[i].toLowerCase().trim();
+      const correctAnswer = q.a.toLowerCase();
+      const isCorrect = userAnswer === correctAnswer;
+      console.log(`Question ${i + 1}: "${userAnswer}" === "${correctAnswer}" ? ${isCorrect}`);
+      return isCorrect;
+    });
+    
+    const allCorrect = results.every(r => r);
 
     if (allCorrect) {
       updateState({
