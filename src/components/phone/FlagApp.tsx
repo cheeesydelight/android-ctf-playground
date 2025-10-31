@@ -55,6 +55,10 @@ const FlagApp = ({ goHome }: FlagAppProps) => {
               All actions were game mechanics with no real exploitation.
             </p>
           </div>
+
+          <div className="mt-4 pt-3 border-t border-slate-200">
+            <p className="text-xs text-slate-500">Created by @surajshankhpal</p>
+          </div>
         </div>
       </div>
     </div>

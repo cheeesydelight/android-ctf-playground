@@ -150,6 +150,9 @@ const PhoneSimulator = () => {
               <li>• Solve puzzles to progress</li>
             </ul>
           </div>
+          <div className="mt-4 border-t border-slate-700 pt-3 text-center">
+            <p className="text-xs text-slate-500">Created by @surajshankhpal</p>
+          </div>
         </div>
       </div>
     </div>
